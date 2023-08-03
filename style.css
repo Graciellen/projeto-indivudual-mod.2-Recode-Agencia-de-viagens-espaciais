@@ -1,0 +1,482 @@
+style{@import url('https://fonts.googleapis.com/css2? family= Gentium+Book+Plus:ital,wght@0,400;0,700;1,400;1,700 & family= Inter:wght@100;200;800;900 & display=swap');
+}
+
+
+*{  
+    margin:0;                                                                                                                                                                            
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    font-family: sans-serif;
+                }    
+body{
+    background-color: aliceblue ;   
+    
+}
+section,
+footer{
+    padding: 56px;
+}
+h3{
+    font-size: 50px;
+     
+}
+p{
+    color:rgb(0, 0, 0);
+    
+}
+.container{
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 5%; 
+} 
+.btn{
+    background-color: #43c2fd;
+    color: rgb(3, 3, 3);
+    padding: 15px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    display: inline-block ;
+    transition: 0.1s;
+    font-weight: bold;
+    font-family: sans-serif;
+   
+   
+} 
+.btn.animate-btn{
+    animation: animate-outline 1s ease-out infinite;
+}
+.btn:hover{
+    background-color: #c3e7f8;
+}
+@keyframes animate-outline{
+from{    
+    outline: 0px solid rgb(255, 230, 217);
+}
+to{
+        outline: 15px solid #fffdfb;}
+
+}
+@-webkit-keyframes animate-outline /* Safari e Chrome */
+{
+from{
+    outline: 0px solid rgb(164, 218, 253);
+}
+to{
+    outline: 15px solid #fdfdfc;}
+}
+@media screen and (max-whidt: 768px){
+    .container header{
+        width: 100%;
+        flex-direction: column;
+    }    
+} 
+header{    
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;    
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;  
+    padding-top: 30px; 
+}
+nav ul{
+    display: flex;
+    align-items: center;
+}
+nav ul a{
+    color: #f5740a;
+    margin: 0 25px;
+    text-transform:uppercase;   
+    font-weight: bolder;
+    font-size: 20px;
+    display: block;         
+}
+    
+nav ul a:not(.btn):after{
+    content: "";
+    background-color:white;
+    height: 3px;
+    width: 0%;    
+    display: flex;
+    margin: 0 auto;
+    transition: 0.3s;
+}
+nav ul a:hover::after{
+width: 100%;
+}
+.btn:hover{
+    background-color:#f87103 ;
+}
+.banner {
+    display: flex;
+    justify-content:center;    
+}
+.banner{
+    background-size: cover;
+    margin: 100px;
+    text-align: center;
+    padding: 100px;
+}
+.banner h1{
+    font-size: 60px;
+    color:#f87103;
+    font-size: fixed;
+    margin-bottom: 50px; 
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color:aliceblue;      
+} 
+
+.banner.banner p{
+    font-size: 30px;
+    color:rgb(7, 7, 7);
+    font-weight: bolder;
+    margin: 18px 0;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color:aliceblue;
+}
+/*promoções*/ 
+header{    
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;    
+} 
+
+.promoções-text {
+   text-align: center;
+   margin-top: -105px;
+   margin: 0PX 20PX 20px 20px;
+   color: #f87103; 
+   -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color:rgb(0, 0, 0); 
+}
+      
+.promoções-text img{   
+    margin-top: 35PX;
+    background-color: white;
+    padding: 10px;
+} 
+.promoções-text P{
+   font-size: 24px;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   margin-top: 20px;
+   color: rgb(0, 0, 0);
+   font-weight: bolder;
+   text-align: center;
+   -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color:#f87103;    
+}                                 
+/* end promoções*/
+
+/*faça-mais*/ 
+.faça-mais .container {
+    display: flex;
+    align-items: center;
+    
+}
+.faça-mais .faça-mais-text{
+    width: 50%;
+    padding: 30px 50px;
+    text-align: center;
+    
+}
+.faça-mais .faça-mais-text h3{
+    font-size: 45px;
+    margin-top: -150px;
+    text-align: start;
+    color: #f87103;
+    font-family: sans-serif;
+}
+.faça-mais-text p{
+    margin: 50px 50px 30px 0px;
+    font-size: 22px;
+    text-align: start;
+   font-weight: bold;
+}   
+.faça-mais .faça-mais-img{
+    width: 50%;
+}
+.faça-mais .faça-mais-img img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 50px;  
+}
+.depoimentos h3{
+    text-align: center;
+    color: #f87103;    
+}
+.depoimentos p{
+    text-align: center;
+    margin: 10px 10px 10px 10px;
+    color: #020202;
+    font-weight: bold;
+}
+.cards{
+    display: flex;
+    justify-content: center;
+}
+.card-item{
+    background-color: #facca6;
+    margin: 15px;
+    border-radius: 14px;
+    text-align: center;
+    width: 350px;
+    transition: 0.3s;
+}
+.card-item img{
+    border-radius: 5px;    
+}
+.nome-user{
+   font-weight: bolder;
+   font-size: 20px; 
+   margin-bottom: 10px;
+}
+.depoimento-user{
+    font-size: 15px;
+    padding: 0 15px;
+}
+.card-item:hover{
+    background-color: rgb(188, 217, 243);
+    margin-top: -5px;
+}
+
+.card-item:hover .nome-user{
+    color: #f87103;
+}
+.clientes h3{
+    text-align: center;
+    margin: 0px 10px 50px 0px;
+    font-size: 40px;
+}   
+   
+.clientes .container div{
+    display: flex;
+    text-align: center;  
+    justify-content: space-around;
+    margin: 0px 8px 30px 0px;           
+}
+.clientes p{
+    background-color: #facca6;
+    text-align: center;
+}
+.banner-destino {
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;    
+}
+
+.banner-destino h1{
+    font-size: 60px;
+    align-items: center; } 
+
+.bannerdestino p{
+    text-align: center;
+    font-size: 80px;
+    font-weight: bolder;
+    font-family: sans-serif;
+    color: aliceblue;
+} 
+.destino{
+    display: flex;
+    align-items: center;        
+    justify-content: space-between;
+    margin-top: 30px;
+    transition: 0.3s;                
+}  
+.destino2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    margin-top: 30px;
+    transition: 0.3s;    
+    
+} 
+.banner-destino h1{
+    font-family: sans-serif;
+    font-size: 80px;
+    margin-top: -30px;    
+} 
+
+.destino img{
+    background-color:aliceblue;
+    width: 300px;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px;
+    transition: 0.3s;    
+}
+.destino2 img{
+    background-color:aliceblue;
+    width: 300px;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px;    
+}
+.banner-destino {
+    font-size: 35px;
+}
+.destino2 :hover {
+    background-color: #fc8b2e;
+}
+.destino :hover {
+    background-color: #fc8b2e;
+}
+.tabela.destino{
+    display: block;
+    padding: 8px;
+}
+
+
+
+
+
+/*pagina de contato*/
+body{
+    background-size: cover;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    
+}
+.botão-contato{
+    margin-top: 130px;
+
+}
+.mapa{
+    margin-top: -50px;
+}
+
+.left-side p{
+    display: block;
+    font-size: 18px;
+    color: #f87103;
+    font-weight: lighter;
+    text-align:flex start ;
+    margin-bottom: 8px;
+}
+.rigth-side input{
+    margin-top: 8px;
+    display: block;    
+    border-radius: 3px;
+    width: 50%;
+    font-size: 18px;   
+    font-weight: bold;       
+    
+} 
+.rigth-side textarea{
+    margin-top: 8px;
+    display: block;    
+    border-radius: 9px;
+    width: 50%;
+    resize: none;    
+    font-weight: bold;
+    align-items: center;    
+}
+.rigth-side2 input{
+    margin-top: 8px;
+    display: block;    
+    border-radius: 5%;
+    width: 100%;
+    font-size: 22px;   
+    font-weight: lighter;
+    margin: 0 0 18px 0;
+    border: none;
+    resize: none; 
+}
+    
+.rigth-side2{
+    border-radius: 5px;
+    display:inline-block;
+    width: 350px;
+    resize: none;    
+    margin: 0 0px 30px 50px;
+    background-color: #fcf2eb;       
+}
+   
+
+.rigth-side2 textarea {       
+    border-radius: 3px;
+    display:block;
+    margin-top: 5px; 
+    resize: none; 
+    width: 100%;
+    margin-bottom: 10%;          
+
+}
+.rigth-side2 button{
+    margin-top: 15px;
+    border: none;
+}     
+
+  
+
+
+
+
+
+
+/*end pagina de contato*/
+/*pagina home responsivel*/
+
+
+
+
+
+
+   
+
+
+
+
+   
+    
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+ 
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
