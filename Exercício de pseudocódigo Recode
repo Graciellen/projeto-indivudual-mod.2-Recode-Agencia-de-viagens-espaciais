@@ -1,0 +1,114 @@
+Algoritmo "AgenciaDeViagens"
+    // Declaração de variáveis
+    const MAX_CLIENTES = 10
+    const MAX_DESTINOS = 10
+    var clientes: vetor[MAX_CLIENTES] de registro
+    var destinos: vetor[MAX_DESTINOS] de registro
+    var opcao: caractere
+    var nclientes, ndestinos: inteiro
+    
+    // Inicialização das variáveis
+    nclientes ← 0
+    ndestinos ← 0
+    
+    // Menu principal
+    repita
+        escreva("------- MENU -------")
+        escreva("1. Cadastro de Cliente")
+        escreva("2. Cadastro de Destino")
+        escreva("3. Consultar Clientes")
+        escreva("4. Consultar Destinos")
+        escreva("0. Sair")
+        escreva("---------------------")
+        escreva("Digite a opção desejada: ")
+        leia(opcao)
+        
+        // Realiza a opção selecionada pelo usuário
+        escolha opcao
+            caso "1"
+                cadastrarCliente(clientes, nclientes)
+            caso "2"
+                cadastrarDestino(destinos, ndestinos)
+            caso "3"
+                consultarClientes(clientes, nclientes)
+            caso "4"
+                consultarDestinos(destinos, ndestinos)
+            caso "0"
+                escreva("Saindo...")
+            caso contrário
+                escreva("Opção inválida! Tente novamente.")
+                
+    até opcao = "0"
+    
+FimAlgoritmo
+
+Algoritmo "cadastrarCliente"
+    procedimento cadastrarCliente(var clientes: vetor, var nclientes: int)
+        // Verifica se há espaço disponível para cadastrar um novo cliente
+        se nclientes < MAX_CLIENTES então
+            escreva("----- Cadastro de Cliente -----")
+            escreva("Digite o nome do cliente: ")
+            leia(clientes[nclientes].nome)
+            escreva("Digite o CPF do cliente: ")
+            leia(clientes[nclientes].cpf)
+            
+            nclientes ← nclientes + 1
+            escreva("Cliente cadastrado com sucesso!")
+        senão
+            escreva("Limite máximo de clientes atingido!")
+        fimse
+    fimprocedimento
+FimAlgoritmo
+
+Algoritmo "cadastrarDestino"
+    procedimento cadastrarDestino(var destinos: vetor, var ndestinos: int)
+        // Verifica se há espaço disponível para cadastrar um novo destino
+        se ndestinos < MAX_DESTINOS então
+            escreva("----- Cadastro de Destino -----")
+            escreva("Digite o nome do destino: ")
+            leia(destinos[ndestinos].nome)
+            escreva("Digite o valor do destino: ")
+            leia(destinos[ndestinos].valor)
+            
+            ndestinos ← ndestinos + 1
+            escreva("Destino cadastrado com sucesso!")
+        senão
+            escreva("Limite máximo de destinos atingido!")
+        fimse
+    fimprocedimento
+FimAlgoritmo
+
+Algoritmo "consultarClientes"
+    procedimento consultarClientes(var clientes: vetor, var nclientes: int)
+        se nclientes > 0 então
+            escreva("----- Clientes Cadastrados -----")
+            para i de 0 até nclientes-1 faça
+                escreva("Cliente ", i+1, ":")
+                escreva("Nome: ", clientes[i].nome)
+                escreva("CPF: ", clientes[i].cpf)
+                escreva("---------------------------")
+            fimpara
+        senão
+            escreva("Nenhum cliente cadastrado!")
+        fimse
+    fimprocedimento
+FimAlgoritmo
+
+Algoritmo "consultarDestinos"
+    procedimento consultarDestinos(var destinos: vetor, var ndestinos: int)
+        se ndestinos > 0 então
+            escreva("----- Destinos Cadastrados -----")
+            para i de 0 até ndestinos-1 faça
+                escreva("Destino ", i+1, ":")
+                escreva("Nome: ", destinos[i].nome)
+                escreva("Valor: ", destinos[i].valor)
+                escreva("---------------------------")
+            fimpara
+        senão
+            escreva("Nenhum destino cadastrado!")
+        fimse
+    fimprocedimento
+FimAlgoritmo
+
+
+Neste pseudocódigo, utilizamos o conceito de programação estruturada, que consiste em organizar o código em módulos (procedimentos) bem definidos e cada um realizando uma tarefa específica. Os dados de clientes e destinos são armazenados em vetores, permitindo a adição de várias entradas.
