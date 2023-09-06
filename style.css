@@ -9,7 +9,11 @@ style{@import url('https://fonts.googleapis.com/css2? family= Gentium+Book+Plus:
     text-decoration: none;
     outline: none;
     font-family: sans-serif;
-                }    
+} 
+
+    
+   
+        
 body{
     background-color: aliceblue ;   
     
@@ -66,12 +70,10 @@ from{
 to{
     outline: 15px solid #fdfdfc;}
 }
-@media screen and (max-whidt: 768px){
-    .container header{
-        width: 100%;
-        flex-direction: column;
-    }    
-} 
+
+    
+        
+
 header{    
     background-position: center;
     background-size: cover;
@@ -409,17 +411,21 @@ body{
 .rigth-side2 button{
     margin-top: 15px;
     border: none;
-}     
-
-  
-
-
-
-
-
-
+}   
 /*end pagina de contato*/
 /*pagina home responsivel*/
+
+   
+
+ 
+    
+
+    
+
+    
+
+    
+
 
 
 
