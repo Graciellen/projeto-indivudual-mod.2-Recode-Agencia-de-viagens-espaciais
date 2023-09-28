@@ -518,40 +518,114 @@ table {
   .btn:hover {
     background-color: #45a049;
   }   
+  .menu{
+    display: none;
+  }
+   
 /*end pagina de contato*/
+/*menu hamburguer*/
 /*pagina home responsivel*/
-/* Estilos padrão */
-.card {
-    width: 200px;
-    height: 200px;
-  }
+@media screen and (max-width:768px){
   
-  .form {
-    width: 400px;
-    height: 300px;
-  }
-  
-  /* Media queries para dispositivos menores */
-  @media screen and (max-width: 768px) {
-    .card {
-      width: 150px;
-      height: 150px;
+    /* estilos para o menu hambúrguer */   
+     
+  .ul {
+    display: none;
     }
+  .menu-hamburguer {
+    display: block;
+    }       
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .menu {
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.247);
+    border-radius: 3px;        
     
-    .form {
-      width: 300px;
-      height: 250px;
-    }
   }
   
-  @media screen and (max-width: 480px) {
-    .card {
-      width: 100px;
-      height: 100px;
-    }
-    
-    .form {
-      width: 200px;
-      height: 150px;
-    }
+  .menu li {
+    margin-right: 20px;
   }
+  
+  .hamburger-menu {
+    display: none;
+  }
+  
+  .hamburger-menu .bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px;
+  }      
+  .banner-text h1{
+    font-size: 45px; 
+    color: #f87103;
+  }
+  .banner-text p{
+    display: none;
+  } 
+  .faça-mais{
+    display: none;
+  }
+  .cards{
+    display: block;
+    
+  }
+  .cards{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .depoimentos h3{
+    font-size: 25px;
+  } 
+  .depoimentos p{
+    font-size: 10px;
+  }
+  .destino{        
+    display: none;     
+  }
+  .destino2{
+    display: none;
+  }
+  .bannerdestino{
+    display: cover;
+  }  
+  .bannerdestino {
+    align-items: center;
+    display: block;   
+    
+  }
+  .bannerdestino h1{
+    display: none;
+  }
+  .bannerdestino .btn{
+    margin-top: 200px;
+  }
+  .clientes{
+    margin-top: 50px;
+  }
+  .header{
+    display: cover;
+  }
+  .banner p{
+    display: none;
+  }
+  .banner-text2 h1{
+    font-size: 45px;
+  }
+  .a img{
+    display: center;
+  }
+
+  }
+    
+  
+
+  
