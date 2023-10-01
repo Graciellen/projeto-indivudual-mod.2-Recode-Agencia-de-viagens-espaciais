@@ -329,7 +329,7 @@ width: 100%;
 .banner-destino h1{
     font-family: sans-serif;
     font-size: 80px;
-    margin-top: -30px;    
+    margin-top: -30px;   
 } 
 
 .destino img{
@@ -361,10 +361,6 @@ width: 100%;
     padding: 8px;
 }
 
-
-
-
-
 /*pagina de contato*/
 h1 {
     text-align: center;
@@ -372,20 +368,16 @@ h1 {
     margin-bottom: 20px;
     margin-top: 10%;
     color: #f2f2f2;
-   font-family: cursive;
-    
+   font-family: cursive;    
   }
   
   form {    
-    align-items: center;    
-
-    
+    align-items: center;      
   }
   
   label {
     display: block;
-    margin-top: 10px;
-    
+    margin-top: 10px;    
   }
   
   input[type="text"],
@@ -405,14 +397,12 @@ h1 {
     margin-top: 10px;
     background-color: #4CAF50;
     color: white;
-    margin-bottom: 30%;
-    
+    margin-bottom: 30%;    
     cursor: pointer;
   }
   
   input[type="submit"]:hover {
-    background-color: #45a049;
-  
+    background-color: #45a049;  
   }
   
   textarea {
@@ -422,20 +412,13 @@ h1 {
     background-size: cover;
     background-position: center;
     background-size: cover;
-    background-attachment: fixed;
-    
+    background-attachment: fixed;    
 }
-
 .mapa{
- width: 80%; 
+ width: 100%; 
  margin-top: 300px; 
- margin-left: 10%;
- 
- 
-
     
 }
-
 
 /*formulário destino*/
 .bannerdestino{
