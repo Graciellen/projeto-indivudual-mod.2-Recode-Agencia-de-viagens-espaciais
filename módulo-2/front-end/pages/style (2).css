@@ -1,0 +1,78 @@
+/*depoimentos cards index*/
+.depoimentos h3{
+    margin-top: 100px;
+    text-align: center;
+    color: #020202;
+    font-family: Arial, sans-serif
+       
+}
+.depoimentos p{
+    text-align: center;
+    margin: 10px 10px 10px 10px;
+    color: #000000;
+    font-weight: bold;
+    font-family: Arial, sans-serif
+}
+.cards{    
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+}
+.card-item{
+    background-color: rgb(255, 193, 7);
+    margin: 15px;
+    border-radius: 14px;
+    text-align: center;
+    width: 300px;
+    transition: 0.3s;
+}
+.card-item img{
+    width: 50%;
+}
+   
+
+.nome-user{
+   font-weight: bolder;
+   font-size: 20px; 
+   margin-bottom: 10px;
+}
+.depoimento-user{
+    font-size: 15px;
+    padding: 0 15px;
+}
+.card-item:hover{
+    background-color: rgb(255, 255, 255);
+    margin-top: -5px;
+}
+
+.card-item:hover .nome-user{
+    color: rgb(255, 193, 7);
+}
+/* end depoimentos cards index*/
+/*formas de pagamento*/
+.row .mt-4 img{
+    width: 60px;
+}
+/*end formas de pagamentos*/
+/*pagina home responsivel*/
+@media screen and (max-width:768px){
+  
+.cards{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .depoimentos h3{
+    font-size: 25px;
+  } 
+  .depoimentos p{
+    font-size: 10px;
+  }
+}
+/*end cards responsivo*/
+.footer p{
+    margin-top: 50px;
+    background-color:rgba(255, 193, 7, 0.432) ;
+    text-align: center;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;}
+
