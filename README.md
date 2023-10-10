@@ -2,8 +2,7 @@
 
 Projeto desenvolvido para conclusão da atividade prática recode 2023: 
 ✔módulo 2 
-✔módulo 3
-✔ módulo 4
+
 
 
 
