@@ -1,6 +1,10 @@
 # 🚀Agência espacial de turismo (CLEC)🚀 
 
-Projeto desenvolvido para conclusão da atividade prática do módulo 2 do curso de Fullstack da RecodePro2023.
+Projeto desenvolvido para conclusão da atividade prática recode 2023: 
+✔módulo 2 
+
+
+
 
 ## 🚀 Tecnologias utilizadas🚀
 
